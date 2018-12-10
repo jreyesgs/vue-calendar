@@ -39,6 +39,14 @@
   padding: 5px;
 }
 
+.calendar li:hover .add {
+  background-color: green;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .calendar li .day {
   position: absolute;
   top: 5px;
@@ -47,22 +55,32 @@
 
 .calendar li .add {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: 10px;
+  right: 10px;
   display: block;
-  height: 30px;
-  width: 30px;
-  background-color: green;
+  height: 20px;
+  width: 20px;
+  background-color: grey;
   color: white;
-  line-height: 30px;
-  text-align: center;
+  padding: 0;
   border-radius: 100%;
   border: 0;
   cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.calendar li .add i {
-  font-size: 12px;
+.calendar li .add svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 10px;
+  width: 14px;
+  height: 14px;
 }
 
 .calendar li.dia {
