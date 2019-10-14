@@ -2,7 +2,7 @@ const app = new Vue({
   el: '#app',
   data: {
     calendar: [],
-    week: ['Dom','Lun', 'Mar','Mie','Jue','Vie','Sav'],
+    week: ['Dom','Lun', 'Mar','Mie','Jue','Vie','Sab'],
     y: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
     d: '',
     month: '',
